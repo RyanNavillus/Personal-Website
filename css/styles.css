@@ -1,0 +1,73 @@
+/*------------------------------------
+        Main Page Menu Header
+------------------------------------*/
+
+#header-menu {
+    background-color:red;
+    float: right;
+}
+.Header-Bar-Item{
+    vertical-align: middle;
+    padding-right: 10px;
+    font-family: Roboto;
+}
+#Header1{
+    background-color: blue;
+    float: right;
+}
+#Header2{
+    background-color: orange;
+    float: right;
+}
+#Header3{
+    background-color: green;
+    float: right;
+}
+
+/*------------------------------------
+        Gallery Header
+------------------------------------*/
+#Gallery-Header{
+    /*position: absolute;*/
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(60vw at -5% 70%, #ffa52c 0%,rgba(255,165,44,0) 100%),radial-gradient(60vw at 105% 30%, #2cc5c5 0%,rgba(44,197,197,0) 100%),radial-gradient(60vw at 70% 105%, #34c388 0%,rgba(52,195,136,0) 100%),#202326;;
+}
+#Gallery-Header-Text{
+    font-family: Impact;
+    font-size: 24;
+    color: white;
+    align-content: center;
+}
+
+/*------------------------------------
+        Gallery Project 1
+------------------------------------*/
+#Project1{
+    /*position: relative;*/
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+#Project1-Text{
+    font-family: Impact;
+    font-size: 24;
+    color: black;
+    align-content: center;
+}
+
+/*------------------------------------
+        Gallery Project 2
+------------------------------------*/
+#Project2{
+    /*position: relative;*/
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+}
+#Project2-Text{
+    font-family: Impact;
+    font-size: 24;
+    align-content: center;
+    color: black;
+}
