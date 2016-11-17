@@ -6,16 +6,15 @@
         <script src="../js/Snap.svg-0.4.1/dist/snap.svg-min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
-            
             function draw(ele)
             {
                 var id = ele.id;
                 var line = ele.getElementsByTagName('line');
                 line[0].style.strokeDasharray = 200;
                 line[0].style.strokeDashoffset= 200;
-                line[0].style.stroke = "#00FFFF";
+                line[0].style.stroke = "#00bfff";
                 //line[0].animate([{strokeDashoffset: 200}, {strokeDashoffset: 0}], 1000, mina.linear, function(){ console.log(line[0].style.strokeDashoffset); line[0].style.strokeDashoffset = 0;});
-                $(line[0]).animate({strokeDashoffset: 0}, 750, "linear", function(){ console.log(line[0].style.strokeDashoffset);});
+                $(line[0]).animate({strokeDashoffset: 0}, 500, "linear", function(){ console.log(line[0].style.strokeDashoffset);});
             }
             function reset(ele)
             {
