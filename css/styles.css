@@ -4,26 +4,87 @@
 
 #header-menu {
     background-color:red;
+    position: relative;
     float: right;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    min-height: 75px;
+    width: 50%;
+    min-width: 450px;
+    max-width: 550px;
+}
+.header-div{
+    display: inline-block;
+    position: relative;
+    float: left;
+    min-width: 50px;
+    max-width: auto;
+    min-height: 50px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header-menu svg{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.svg-div{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    top: 50%; 
+    left: -25%;
+    float: left;
 }
 .Header-Bar-Item{
-    vertical-align: middle;
-    padding-right: 10px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
     font-family: Roboto;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: dodgerblue;
+}
+.Header-Bar-Item a:hover{
+    text-decoration: none;
+    color: darkblue
 }
 #Header1{
     background-color: blue;
-    float: right;
 }
 #Header2{
     background-color: orange;
-    float: right;
 }
 #Header3{
     background-color: green;
-    float: right;
+    min-width: 156px;
 }
-
+/*------------------------------------
+                Gallery
+------------------------------------*/
+.Text-Wrapper{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    color: red;
+}
+p {
+    margin-bottom: 0px;
+}
 /*------------------------------------
         Gallery Header
 ------------------------------------*/
@@ -31,13 +92,20 @@
     /*position: absolute;*/
     height: 100%;
     width: 100%;
-    background: radial-gradient(60vw at -5% 70%, #ffa52c 0%,rgba(255,165,44,0) 100%),radial-gradient(60vw at 105% 30%, #2cc5c5 0%,rgba(44,197,197,0) 100%),radial-gradient(60vw at 70% 105%, #34c388 0%,rgba(52,195,136,0) 100%),#202326;;
+    background: radial-gradient(60vw at -5% 70%, #ffa52c 0%,rgba(255,165,44,0) 100%),radial-gradient(60vw at 105% 30%, #2cc5c5 0%,rgba(44,197,197,0) 100%),radial-gradient(60vw at 70% 105%, #34c388 0%,rgba(52,195,136,0) 100%),#202326;
+    position: relative;
+    text-align: center;
 }
 #Gallery-Header-Text{
     font-family: Impact;
     font-size: 24;
     color: white;
-    align-content: center;
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*------------------------------------
@@ -48,12 +116,20 @@
     height: 100%;
     width: 100%;
     background-color: aqua;
+    position: relative;
+    text-align: center;
+
 }
 #Project1-Text{
     font-family: Impact;
     font-size: 24;
     color: black;
-    align-content: center;
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;    
 }
 
 /*------------------------------------
@@ -64,10 +140,17 @@
     height: 100%;
     width: 100%;
     background-color: lightgreen;
+    position: relative;
+    text-align: center;
 }
 #Project2-Text{
     font-family: Impact;
     font-size: 24;
-    align-content: center;
     color: black;
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto; 
 }
