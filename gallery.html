@@ -6,7 +6,56 @@
         <script src="../js/Snap.svg-0.4.1/dist/snap.svg-min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</head>
+    <script>
+            function draw(ele)
+            {
+                var id = ele.id;
+                var line = ele.getElementsByTagName('line');
+                line[0].style.strokeDasharray = 200;
+                line[0].style.strokeDashoffset= 200;
+                line[0].style.stroke = "#00bfff";
+                line[0].style.opacity = 1;
+                //line[0].animate([{strokeDashoffset: 200}, {strokeDashoffset: 0}], 1000, mina.linear, function(){ console.log(line[0].style.strokeDashoffset); line[0].style.strokeDashoffset = 0;});
+                $(line[0]).animate({strokeDashoffset: 0}, 500, "linear", function(){ console.log(line[0].style.strokeDashoffset);});
+            }
+            function reset(ele)
+            {
+                console.log("hi");
+                var id = ele.id;
+                var line = ele.getElementsByTagName('line');
+                $(line[0]).stop();
+                line[0].style.strokeDashoffset = 200;
+            }
+        </script>
     <body>
+        <header>
+        <div id="header-menu">
+            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
+                <h1 class="Header-Bar-Item" id="Header1" style="color:'#ffffff'"><a href="/index.html">Home</a></h1>
+                <div class = "svg-div">
+                    <svg>
+                        <line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
+                    </svg>
+                </div>
+            </div>
+            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
+                <h1 class="Header-Bar-Item" id="Header2"><a href="/gallery.html">Gallery</a></h1>
+                <div class = "svg-div">
+                    <svg>
+                        <line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
+                    </svg>
+                </div>
+            </div>
+            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
+                <h1 class="Header-Bar-Item" id="Header3"><a href="/about_me.html">About Me</a></h1>
+                <div class = "svg-div">
+                    <svg>
+                        <line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        </header>
         <div id="Gallery-Header">
                 <p id="Gallery-Header-Text">These are my personal projects developed in my free time or at hackathons</p>
         </div>

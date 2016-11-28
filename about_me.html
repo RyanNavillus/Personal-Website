@@ -15,7 +15,7 @@
                 line[0].style.stroke = "#00bfff";
                 line[0].style.opacity = 1;
                 //line[0].animate([{strokeDashoffset: 200}, {strokeDashoffset: 0}], 1000, mina.linear, function(){ console.log(line[0].style.strokeDashoffset); line[0].style.strokeDashoffset = 0;});
-                $(line[0]).animate({strokeDashoffset: 0}, 300, "linear", function(){ console.log(line[0].style.strokeDashoffset);});
+                $(line[0]).animate({strokeDashoffset: 0}, 500, "linear", function(){ console.log(line[0].style.strokeDashoffset);});
             }
             function reset(ele)
             {
@@ -26,11 +26,9 @@
                 line[0].style.strokeDashoffset = 200;
             }
         </script>
-	</head>
-    <body>
         <div id="header-menu">
             <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
-                <h1 class="Header-Bar-Item" id="Header1"><a href="#Header1">Home</a></h1>
+                <h1 class="Header-Bar-Item" id="Header1"><a href="/index.html">Home</a></h1>
                 <div class = "svg-div">
                     <svg>
                         <line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
@@ -54,8 +52,10 @@
                 </div>
             </div>
         </div>
-        <div id="animation-div">
-            
+	</head>
+    <body>
+        <div>
+                <img id="ProfileImage" src="resources/Ryan_Sullivan.png.PNG" alt="Picture of Me">
         </div>
     </body>
 </html>
