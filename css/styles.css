@@ -24,8 +24,6 @@
     max-width: auto;
     min-height: 50px;
     height: auto;
-    margin-left: 30px;
-    margin-right: 30px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
