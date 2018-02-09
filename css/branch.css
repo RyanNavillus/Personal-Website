@@ -1,0 +1,102 @@
+#commit-div {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#test-div {
+    width: 400px;
+    height: 300px;
+}
+
+#main-svg {
+    width: 100%;
+}
+
+#foreign-object {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+div#foreign-container {
+    background-color: brown;
+}
+
+div.commit-wrapper {
+    position: relative;
+    /*max-width: 600px;*/
+    height: 0;
+    padding-top: 56.25%;
+    background-color: gold;
+    overflow: hidden;
+}
+
+div.commit-div {
+    display: inline-block;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+
+    background-color: green;
+
+    border-style: solid;
+    border-radius: 8px;
+    border-color: blue;
+    border-width: 3px;
+    
+}
+
+div.top-commit-div {
+    display: block;
+    margin: 20px;
+}
+
+img.commit-img {
+    display: inline-block;
+
+    width: 54px;
+    height: 54px;
+
+    margin-right: 20px;
+
+    border-radius: 12px;
+}
+
+h1.commit-title {
+    display: inline-block;
+
+    margin: 5px 20px 0px 0px;
+    max-width: 50%;
+    word-wrap: break-word;
+
+    vertical-align: top;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+}
+
+p.commit-hash {
+    display: inline-block;
+
+    float: right;
+
+    vertical-align: top;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+    color: rgba(156, 156, 156, 1);
+}
+
+div.bottom-commit-div {
+    display: block;
+    margin: 0px 20px 20px 20px;
+}
+
+p.commit-message {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 12px;
+    vertical-align: bottom;
+}
