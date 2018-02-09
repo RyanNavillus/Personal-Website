@@ -5,57 +5,103 @@
 		<link href = "./css/styles.css" rel="stylesheet">
         <script src="./js/Snap.svg-0.4.1/dist/snap.svg-min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./js/animationSettings.js"></script>
+        <script src="./js/svg.js"></script>
         <script>
-            function draw(ele)
-            {
-                var id = ele.id;
-                var line = ele.getElementsByTagName('line');
-                line[0].style.strokeDasharray = 200;
-                line[0].style.strokeDashoffset= 200;
-                line[0].style.stroke = "#00bfff";
-                line[0].style.opacity = 1;
-                //line[0].animate([{strokeDashoffset: 200}, {strokeDashoffset: 0}], 1000, mina.linear, function(){ console.log(line[0].style.strokeDashoffset); line[0].style.strokeDashoffset = 0;});
-                $(line[0]).animate({strokeDashoffset: 0}, 300, "linear", function(){ console.log(line[0].style.strokeDashoffset);});
-            }
-            function reset(ele)
-            {
-                console.log("hi");
-                var id = ele.id;
-                var line = ele.getElementsByTagName('line');
-                $(line[0]).stop();
-                line[0].style.strokeDashoffset = 200;
-            }
+            $(document).ready( function() {
+                var text = document.getElementById("ryan-svg");
+                animateName(text);
+            });
         </script>
-	</head>
-    <body>
-        <div id="header-menu">
-            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
-                <h1 class="Header-Bar-Item" id="Header1"><a href="#Header1">Home</a></h1>
-                <div class = "svg-div">
-                    <svg>
+        <div id="fixed-header">
+            <div id="header">
+                <div id="name-div">
+                <svg id="ryan-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2146 436"><title>Ryan Sullivan Name Corrected</title>
+                    <g id="Layer-N2" class="n">
+                        <path id="N2" d="M2338.09,503.35v-72c0-39.5-32.51-72-72-72s-72,32.5-72,72" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <line id="N1" x1="2000" y1="172.35" x2="2000" y2="289.35" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Layer-A2" class="a">
+                        <line id="A2" x1="1928" y1="173" x2="1928" y2="290" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <path id="A1" d="M2122.09,459c-36.35,39.54-87.14,47.84-117,27-17.06-11.9-27.07-33.34-27-54,.11-37.6,36.37-67.28,72-72,40.4-5.35,68.95,23.78,72,27" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Layer-V1" class="v">
+                        <path id="V2" d="M1852.09,504c18,0,72-144,72-144" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <path id="V1" d="M1780.09,360s54,144,72,144" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Layer-I1" class="i">
+                        <circle id="I2" cx="1514" cy="110" r="9" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <line id="I1" x1="1514" y1="146" x2="1514" y2="290" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Layer-L2" class="l">
+                        <line id="L1" x1="1442" y1="2" x2="1442" y2="290" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Layer-L1" class="l">
+                        <line id="L1-2" data-name="L1" x1="1370" y1="2" x2="1370" y2="290" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Layer-U1" class="u">
+                        <line id="U2" x1="1298" y1="218" x2="1298" y2="290" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <path id="U1" d="M1492.09,360v72c0,39.5-32.51,72-72,72s-72-32.5-72-72V360" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Layer-S1" class="S">
+                        <path id="S1" d="M1276.26,288c0-39.5-32.5-72-72-72-45.73,0-74.7,43.56-72,72,1.45,15.31,25,34.21,72,72,60.15,48.33,70.54,56.69,72,72,2.7,28.44-26.27,72-72,72-39.5,0-72-32.5-72-72" transform="translate(-194.09 -214)" style="fill:#fff;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Letter-N1" class="n">
+                        <path id="N2-2" data-name="N2" d="M988.09,504V432c0-39.5-32.51-72-72-72s-72,32.5-72,72" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <line id="N1-2" data-name="N1" x1="650" y1="173" x2="650" y2="290" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Letter-A1" class="a">
+                        <line id="A2-2" data-name="A2" x1="578" y1="173.65" x2="578" y2="290.65" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <path id="A1-2" data-name="A1" d="M772.09,459.65c-36.35,39.54-87.14,47.84-117,27-17.06-11.89-27.07-33.34-27-54,.11-37.6,36.37-67.28,72-72,40.4-5.35,68.95,23.79,72,27" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Letter-Y1" class="y">
+                        <path id="Y2" d="M556.09,432V576c0,39.5-32.51,72-72,72s-72-32.5-72-72" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <path id="Y1" d="M556.09,360v72c0,39.5-32.51,72-72,72s-72-32.5-72-72V360" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                    <g id="Letter-R1" class="R">
+                        <path id="R3" d="M340.09,504a392.23,392.23,0,0,0-36-90,392.13,392.13,0,0,0-36-54" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <path id="R2" d="M196.09,360h72c39.49,0,72-32.5,72-72s-32.51-72-72-72h-72" transform="translate(-194.09 -214)" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                        <line id="R1" x1="2" y1="2" x2="2" y2="290" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px"/>
+                    </g>
+                                    </svg>
+                                    </div>            
+                                    <div id="header-menu">
+
+                                        <div class="header-div" onmouseenter="underline(this);" onmouseleave="reset(this);">
+                                            <h1 class="Header-Bar-Item" id="Header1"><a href="#Header1">Home</a></h1>
+                                            <div class = "svg-div">
+                                                <svg>
+                                                    
                         <line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
-                    </svg>
-                </div>
-            </div>
-            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
-                <h1 class="Header-Bar-Item" id="Header2"><a href="./gallery.html">Gallery</a></h1>
-                <div class = "svg-div">
-                    <svg>
-                        <line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
-                    </svg>
-                </div>
-            </div>
-            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
-                <h1 class="Header-Bar-Item" id="Header3"><a href="./about_me.html">About Me</a></h1>
-                <div class = "svg-div">
-                    <svg>
-                        <line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
-                    </svg>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="header-div" onmouseenter="underline(this);" onmouseleave="reset(this);">
+                        <h1 class="Header-Bar-Item" id="Header2"><a href="./gallery.html">Gallery</a></h1>
+                        <div class = "svg-div">
+                            <svg>
+                                
+	<line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="header-div" onmouseenter="underline(this);" onmouseleave="reset(this);">
+                        <h1 class="Header-Bar-Item" id="Header3"><a href="./about_me.html">About Me</a></h1>
+                        <div class = "svg-div">
+                            <svg> 
+                                
+	<line x1="0" y1="0" x2="200" y2="0" style="stroke-width:10" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+	</head>
+    <body>
         <div id="animation-div">
-            
         </div>
     </body>
 </html>

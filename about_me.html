@@ -6,7 +6,7 @@
         <script src="./js/Snap.svg-0.4.1/dist/snap.svg-min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
-            function draw(ele)
+            function underline(ele)
             {
                 var id = ele.id;
                 var line = ele.getElementsByTagName('line');
@@ -27,7 +27,7 @@
             }
         </script>
         <div id="header-menu">
-            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
+            <div class="header-div" onmouseenter="underline(this);" onmouseleave="reset(this);">
                 <h1 class="Header-Bar-Item" id="Header1"><a href="./index.html">Home</a></h1>
                 <div class = "svg-div">
                     <svg>
@@ -35,7 +35,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
+            <div class="header-div" onmouseenter="underline(this);" onmouseleave="reset(this);">
                 <h1 class="Header-Bar-Item" id="Header2"><a href="./gallery.html">Gallery</a></h1>
                 <div class = "svg-div">
                     <svg>
@@ -43,7 +43,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="header-div" onmouseenter="draw(this);" onmouseleave="reset(this);">
+            <div class="header-div" onmouseenter="underline(this);" onmouseleave="reset(this);">
                 <h1 class="Header-Bar-Item" id="Header3"><a href="./about_me.html">About Me</a></h1>
                 <div class = "svg-div">
                     <svg>
